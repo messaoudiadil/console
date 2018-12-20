@@ -13,7 +13,6 @@
 
 
 
-job('example') {
     steps {
         msBuild {
             msBuildInstallation('MSBuild')
@@ -25,4 +24,3 @@ job('example') {
             unstableIfWarnings()
         }
     }
-}
