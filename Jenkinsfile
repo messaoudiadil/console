@@ -14,6 +14,6 @@
 
 stage('Build') {
 msbuild project: 'ConsoleApp1/ConsoleApp1.csproj', target: 'Restore,Build',
-properties: [ Configuration: configuration, SolutionDir: "${env.WORKSPACE}/" ]
+properties: [  SolutionDir: "${env.WORKSPACE}/" ]
 
 }
