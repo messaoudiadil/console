@@ -7,7 +7,7 @@
 
 node {
 	stage 'Build'
-	          def msbuild = tool name: 'MSBuild', type: 'hudson.plugins.msbuild.MsBuildInstallation'
+	          def msbuild = tool name: 'msbuild'
 
 bat "${msbuild} ConsoleApp1.sln "
 }
