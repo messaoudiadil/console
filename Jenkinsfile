@@ -5,8 +5,16 @@
 //}
 
 
+node {
+	stage 'Build'
 
-stage('Build') {
-msbuild project: 'ConsoleApp1/ConsoleApp1.csproj', target: 'Restore,Build',
-properties: [  SolutionDir: "${env.WORKSPACE}/" ]
+
+bat "\"${tool 'MSBuild'}\" ConsoleApp1.sln "
 }
+
+
+
+//stage('Build') {
+//msbuild project: 'ConsoleApp1/ConsoleApp1.csproj', target: 'Restore,Build',
+//properties: [  SolutionDir: "${env.WORKSPACE}/" ]
+//}
