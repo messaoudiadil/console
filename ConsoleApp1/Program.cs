@@ -12,9 +12,7 @@ namespace ConsoleApp1
         {
             int valueInt = 4;
             Console.WriteLine(valueInt);
-            Console.ReadLine();
-            Console.ReadLine();
-            Console.ReadLine();
+          
         }
     }
 }
